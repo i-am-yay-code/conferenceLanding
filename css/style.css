@@ -110,7 +110,7 @@ body {
 }
 
 .navigation__buttonlogo > a::before {
-  content: url(/img/icons/microphone.png);
+  content: url(img/icons/microphone.png);
   position: absolute;
   -webkit-transform: scale(0.03);
           transform: scale(0.03);
@@ -186,14 +186,14 @@ body {
 }
 
 .button::before {
-  content: url(/img/icons/ticket.png);
+  content: url(img/icons/ticket.png);
   position: absolute;
   left: 35px;
   top: 14px;
 }
 
 .module1 {
-  background-image: url(./img/lecture.jpg);
+  background-image: url(img/lecture.jpg);
   height: 650px;
 }
 
@@ -375,7 +375,7 @@ body {
 
 .module2__list > ul > li::before {
   position: absolute;
-  background: url(/img/icons/gal.png) no-repeat;
+  background: url(img/icons/gal.png) no-repeat;
   background-size: 15px 15px;
   display: inline-block;
   width: 20px;
@@ -610,7 +610,7 @@ body {
   content: " ";
   width: 16px;
   height: 16px;
-  background: url(/img/icons/man_icon.png) no-repeat;
+  background: url(img/icons/man_icon.png) no-repeat;
   position: absolute;
   left: -20px;
 }
@@ -624,7 +624,7 @@ body {
   content: " ";
   width: 16px;
   height: 16px;
-  background: url(/img/icons/letter_icon.png) no-repeat;
+  background: url(img/icons/letter_icon.png) no-repeat;
   position: absolute;
   left: 4px;
   top: 3px;
@@ -640,7 +640,7 @@ body {
   content: " ";
   width: 16px;
   height: 16px;
-  background: url(/img/icons/clock_icon.png) no-repeat;
+  background: url(img/icons/clock_icon.png) no-repeat;
   position: absolute;
   left: 0;
 }
@@ -654,7 +654,7 @@ body {
   content: " ";
   width: 16px;
   height: 16px;
-  background: url(/img/icons/point_icon.png) no-repeat;
+  background: url(img/icons/point_icon.png) no-repeat;
   position: absolute;
   left: 0;
 }
