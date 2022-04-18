@@ -193,7 +193,7 @@ body {
 }
 
 .module1 {
-  background-image: url(img/lecture.jpg);
+  background-image: url(../img/lecture.jpg);
   height: 650px;
 }
 
