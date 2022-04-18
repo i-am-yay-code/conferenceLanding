@@ -51,7 +51,7 @@ body {
 
 
     &::before {
-        content: url(img/icons/microphone.png);
+        content: url(/img/icons/microphone.png);
         position: absolute;
         transform: scale(0.03);
         width: 10px;
@@ -123,7 +123,7 @@ body {
     position: relative;
 
     &::before {
-        content: url(img/icons/ticket.png);
+        content: url(./img/icons/ticket.png);
         position: absolute;
         left: 35px;
         top: 14px
@@ -133,7 +133,7 @@ body {
 
 //------------MODULE 1------------- 
 .module1 {
-    background-image: url(img/lecture.jpg);
+    background-image: url(.img/lecture.jpg);
     height: 650px;
 }
 
@@ -309,7 +309,7 @@ body {
 
     &::before {
         position: absolute;
-        background: url(img/icons/gal.png) no-repeat;
+        background: url(../img/icons/gal.png) no-repeat;
         background-size: 15px 15px;
         display: inline-block;
         width: 20px;
