@@ -4,3 +4,4 @@ Made using:
   - SCSS
   - Flexbox
   - Grid
+Try it: https://i-am-yay-code.github.io/conferenceLanding/
