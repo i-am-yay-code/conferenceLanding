@@ -51,7 +51,7 @@ body {
 
 
     &::before {
-        content: url(/img/icons/microphone.png);
+        content: url(../img/icons/microphone.png);
         position: absolute;
         transform: scale(0.03);
         width: 10px;
@@ -123,7 +123,7 @@ body {
     position: relative;
 
     &::before {
-        content: url(./img/icons/ticket.png);
+        content: url(../img/icons/ticket.png);
         position: absolute;
         left: 35px;
         top: 14px
@@ -509,7 +509,7 @@ body {
     content: " ";
     width: 16px;
     height: 16px;
-    background: url(img/icons/man_icon.png) no-repeat;
+    background: url(../img/icons/man_icon.png) no-repeat;
     position: absolute;
     left: -20px;
 }
@@ -523,7 +523,7 @@ body {
     content: " ";
     width: 16px;
     height: 16px;
-    background: url(img/icons/letter_icon.png) no-repeat;
+    background: url(../img/icons/letter_icon.png) no-repeat;
     position: absolute;
     left: 4px;
     top: 3px;
@@ -538,7 +538,7 @@ body {
         content: " ";
         width: 16px;
         height: 16px;
-        background: url(img/icons/clock_icon.png) no-repeat;
+        background: url(../img/icons/clock_icon.png) no-repeat;
         position: absolute;
         left: 0;
     }
@@ -552,7 +552,7 @@ body {
         content: " ";
         width: 16px;
         height: 16px;
-        background: url(img/icons/point_icon.png) no-repeat;
+        background: url(../img/icons/point_icon.png) no-repeat;
         position: absolute;
         left: 0;
     }
