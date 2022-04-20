@@ -21,7 +21,12 @@ body {
 
 .header {
     background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    z-index: 50;
 }
+
+.header__burger {}
 
 .navigation {
     padding-left: 90px;
@@ -29,6 +34,7 @@ body {
     height: 100px;
     display: grid;
     grid-template-columns: 2fr 4fr 1fr;
+    column-gap: minmax(10px, auto);
 }
 
 .navigation>* {
@@ -134,7 +140,9 @@ body {
 //------------MODULE 1------------- 
 .module1 {
     background-image: url(../img/lecture.jpg);
-    height: 650px;
+    max-height: 650px;
+    background-position: center center;
+    background-attachment: fixed
 }
 
 .module1__blur {
@@ -227,6 +235,8 @@ body {
     width: 100px;
     text-align: center;
     border: solid 1px #fff;
+    margin-bottom: 10px;
+
 }
 
 .counter__block1 {
@@ -236,6 +246,7 @@ body {
 
 .block__number {
     padding: 15%;
+    height: 100%;
     padding-bottom: 0;
     font-size: 44px;
     font-weight: bold;
@@ -453,6 +464,7 @@ body {
     display: flex;
     flex-direction: row;
     margin-bottom: 40px;
+
 }
 
 
@@ -467,7 +479,7 @@ body {
 .module4__picture1 {}
 
 .module4__main {
-    flex: 1 1 445px;
+    flex: 1 0 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -495,6 +507,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .module4__info1 {}
@@ -556,4 +569,629 @@ body {
         position: absolute;
         left: 0;
     }
+}
+
+@media (max-width: 1260px) and (min-width:992px) {
+    .navigation {
+        padding-left: 10px;
+        padding-right: 10px;
+        grid-template-columns: 1.5fr 4fr 1fr;
+
+    }
+
+    .module1 {
+        background-image: url(../img/lecture_mobile.jpg);
+    }
+
+    .counter {
+        height: auto;
+    }
+
+    .counter__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 140px;
+        column-gap: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .counter__content {
+        grid-column: 1 1;
+        grid-row: 1 1;
+        width: auto;
+        text-align: center;
+
+    }
+
+    .counter__counter {
+        width: 50%;
+        grid-column: 1 1;
+        grid-row: 2 2;
+        margin-bottom: 30px;
+    }
+
+    .module2 {
+        column-gap: 20px;
+    }
+
+    .module2__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .module2__photo>img {
+        width: 100%;
+    }
+
+    .module2__title {
+        padding-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .module2__pararaph {
+        margin-bottom: 15px;
+    }
+
+    .module2__list {
+        margin-bottom: 15px;
+    }
+
+    .module2__photo>img {
+        padding: auto 0;
+    }
+
+    .module3__speaker>a>img {
+        max-width: 180px;
+    }
+
+}
+
+@media (max-width: 1080px) and (min-width: 768px) {
+    .module4__lectures {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    .module4_lecture {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .module4__picture {
+        flex: 0 1 50px;
+        margin-bottom: 20px;
+    }
+
+    .module4__main {
+        flex: 0 0 auto;
+        margin-bottom: 20px;
+
+    }
+
+    .module4__info {
+        flex: 0 0 auto;
+
+    }
+
+    .time {
+        width: fit-content;
+        align-self: center;
+    }
+
+    .time::before {
+        left: 0px;
+    }
+
+    .adress {
+        width: fit-content;
+        align-self: center;
+
+    }
+
+    .adress::before {
+        left: 0px;
+        top: 1px
+    }
+
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .navigation {
+        padding-left: 10px;
+        padding-right: 10px;
+        grid-template-columns: 1.5fr 5fr 1fr;
+    }
+
+    .navigation__menu {
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+    .module1 {
+        background-image: url(../img/lecture_mobile.jpg);
+    }
+
+    .counter {
+        height: auto;
+    }
+
+    .counter__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 140px;
+        column-gap: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .counter__block {
+        width: 100px;
+    }
+
+    .counter__content {
+        grid-column: 1 1;
+        grid-row: 1 1;
+        width: auto;
+        text-align: center;
+
+    }
+
+    .counter__counter {
+        width: 100%;
+        grid-column: 1 1;
+        grid-row: 2 2;
+        margin-bottom: 30px;
+    }
+
+    .module2 {
+        column-gap: 20px;
+    }
+
+    .module2__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .module2__photo>img {
+        width: 100%;
+    }
+
+    .module2__title {
+        padding-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .module2__pararaph {
+        margin-bottom: 15px;
+    }
+
+    .module2__list {
+        margin-bottom: 15px;
+    }
+
+    .module2__photo>img {
+        padding: auto 0;
+    }
+
+    .module3__speaker>a>img {
+        max-width: 140px;
+    }
+
+    .module2 {
+        grid-template-columns: 1fr;
+
+    }
+
+    .module2__photo {
+        display: none;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 767px) {
+
+    .header {}
+
+    .navigation {
+        padding-left: 30px;
+        padding-right: 20px;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .navigation__menu {
+        display: none;
+    }
+
+    .container__module1 {
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .module1 {
+        background-image: url(../img/lecture_mobile.jpg);
+    }
+
+    .module1__blur {
+        height: auto;
+    }
+
+    .content__button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .content {
+        padding-top: 60px;
+    }
+
+    .content__title {
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+    }
+
+    .counter {
+        height: auto;
+    }
+
+    .counter__container {
+        padding: 0 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .counter__block {
+        width: 50px;
+        height: 50px;
+    }
+
+    .counter__content {
+
+        padding: 30px 90px 0px 90px;
+        width: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .block__number {
+        font-size: 28px;
+    }
+
+    .counter__counter {
+        width: fit-content;
+        column-gap: 15px;
+        margin-bottom: 30px;
+        padding: 0px;
+    }
+
+
+    .module2 {
+        column-gap: 20px;
+    }
+
+    .module2__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .module2__photo>img {
+        width: 100%;
+    }
+
+    .module2__title {
+        padding-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .module2__pararaph {
+        margin-bottom: 15px;
+    }
+
+    .module2__list {
+        margin-bottom: 25px;
+    }
+
+    .module2__photo>img {
+        padding: auto 0;
+    }
+
+    .module2__link {
+        font-size: 26px;
+    }
+
+    .module3__content {
+        padding: 0 20px;
+    }
+
+    .module3__img {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        margin-bottom: 100px;
+    }
+
+    .module3__speaker>a>img {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 100px;
+    }
+
+    .module2 {
+        grid-template-columns: 1fr;
+
+    }
+
+    .module2__photo {
+        display: none;
+    }
+
+    .module4__daydate {
+        font-size: 14px;
+    }
+
+    .module4__lectures {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+
+    .module4_lecture {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .module4__picture {
+        flex: 0 1 50px;
+        margin-bottom: 20px;
+    }
+
+    .module4__main {
+        flex: 0 0 auto;
+        margin-bottom: 20px;
+
+    }
+
+    .module4__info {
+        flex: 0 0 auto;
+
+    }
+
+    .time {
+        width: fit-content;
+        align-self: center;
+    }
+
+    .time::before {
+        left: 0px;
+    }
+
+    .adress {
+        width: fit-content;
+        align-self: center;
+
+    }
+
+    .adress::before {
+        left: 0px;
+        top: 1px
+    }
+
+}
+
+@media (max-width: 425px) {
+    .header {
+        display: none;
+    }
+
+    .container__module1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .module1 {
+        background-image: url(../img/lecture_mobile.jpg);
+    }
+
+    .module1__blur {
+        height: auto;
+    }
+
+    .content__button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .content {
+        padding-top: 60px;
+    }
+
+    .content__title {
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+    }
+
+    .counter {
+        height: auto;
+    }
+
+    .counter__container {
+        padding: 0 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .counter__block {
+        width: 50px;
+        height: 50px;
+    }
+
+    .counter__content {
+
+        padding: 30px 90px 0px 90px;
+        width: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .block__number {
+        font-size: 28px;
+    }
+
+    .counter__counter {
+        width: fit-content;
+        column-gap: 15px;
+        margin-bottom: 30px;
+        padding: 0px;
+    }
+
+
+    .module2 {
+        column-gap: 20px;
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+
+    .module2__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .module2__photo>img {
+        width: 100%;
+    }
+
+    .module2__title {
+        padding-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .module2__pararaph {
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .module2__list {
+        margin-bottom: 25px;
+    }
+
+    .module2__photo>img {
+        padding: auto 0;
+    }
+
+    .module2__link {
+        font-size: 26px;
+    }
+
+    .module3__content {
+        padding: 0 20px;
+    }
+
+    .module3__img {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        margin-bottom: 100px;
+    }
+
+    .module3__speaker>a>img {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 100px;
+    }
+
+    .module2 {
+        grid-template-columns: 1fr;
+
+    }
+
+    .module2__photo {
+        display: none;
+    }
+
+    .module4__daydate {
+        font-size: 14px;
+    }
+
+    .module4__lectures {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+
+    .module4_lecture {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .module4__picture {
+        flex: 0 1 50px;
+        margin-bottom: 20px;
+    }
+
+    .module4__main {
+        flex: 0 0 auto;
+        margin-bottom: 20px;
+
+    }
+
+    .module4__info {
+        flex: 0 0 auto;
+
+    }
+
+    .time {
+        width: fit-content;
+        align-self: center;
+    }
+
+    .time::before {
+        left: 0px;
+    }
+
+    .adress {
+        width: fit-content;
+        align-self: center;
+
+    }
+
+    .adress::before {
+        left: 0px;
+        top: 1px
+    }
+
 }
