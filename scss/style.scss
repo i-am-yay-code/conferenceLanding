@@ -246,7 +246,6 @@ body {
 
 .block__number {
     padding: 15%;
-    height: 100%;
     padding-bottom: 0;
     font-size: 44px;
     font-weight: bold;
@@ -611,6 +610,8 @@ body {
         margin-bottom: 30px;
     }
 
+
+
     .module2 {
         column-gap: 20px;
     }
@@ -654,6 +655,7 @@ body {
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
     }
+
 
     .module4_lecture {
         flex-direction: column;
@@ -874,6 +876,11 @@ body {
         padding: 0px;
     }
 
+    .block__number {
+        height: 100%;
+
+    }
+
 
     .module2 {
         column-gap: 20px;
@@ -1067,6 +1074,11 @@ body {
         column-gap: 15px;
         margin-bottom: 30px;
         padding: 0px;
+    }
+
+    .block__number {
+        height: 100%;
+
     }
 
 
